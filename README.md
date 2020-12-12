@@ -14,3 +14,7 @@ Herbera - really light-weight debug lib. It just takes the `sys.modules['__main_
   x = 10
   herbera.breakpoint()
   ```
+
+### `herbera.breakpoint()` takes such parameters, as: from_context, output_manager
+  #### `from_context` - object with `__dict__` attribute. Main module by default
+  #### `output_manager` - callable object, which takes at least one parameter (string). Built-in `print` by default
